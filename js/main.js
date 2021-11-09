@@ -104,6 +104,8 @@ addBadge(btnWishlist, badgeWishlistArray, wishBadge);
 const btnShop = document.querySelector('.btn-shop');
 btnShop.addEventListener('click', () => {
     cartBadge.innerHTML = '';
+    badgeCartArray.splice(0, badgeCartArray.length);
+    console.log(badgeCartArray);
 });
 
 
