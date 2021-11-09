@@ -84,6 +84,7 @@ const products = [
 let bigPic = document.querySelector('.big-photo');
 let title = document.querySelector('.carousel-text > h2');
 let paragraph = document.querySelector('.carousel-text > p');
+let price = document.getElementById('price');
 let rowMiniPic = document.querySelector('.row-mini-pic');
 // buttons
 let btnCart = document.querySelector('.cart');
@@ -139,7 +140,8 @@ function changeIntoBigPic(array){
     
         bigPic.src = `${array[i].url}`;
         title.innerHTML = `${array[i].title}`;
-        paragraph.innerHTML = `${array[i].description}`
+        paragraph.innerHTML = `${array[i].description}`;
+        price.innerHTML = `${array[i].price}`;
         });
     }
 }
